@@ -16,7 +16,7 @@
             <div class="bg-body-tertiary p-5 rounded">
                 <h3>Register New Acount!</h3>
 
-                <form action="<?php echo APPROOT; ?>/users/register" method="post">
+                <form action="<?php echo URLROOT; ?>/users/register" method="post">
                     <div class="form-group mb-2">
                         <label for="name">Name <span>*</span></label>
                         <input type="text" class="form-control <?php echo (!empty($nameErr)) ? 'is-invalid' : ''; ?>" name="name" value="<?php echo $name; ?>">
@@ -46,7 +46,7 @@
                             <input type="submit" class="btn btn-success btn-block" value="Register">
                         </div>
                         <div class="col">
-                            <a href="<?php echo APPROOT; ?>/users/login" class="btn btn-light btn-block" value="Register">Have Account? Login</a>
+                            <a href="<?php echo URLROOT; ?>/users/login" class="btn btn-light btn-block" value="Register">Have Account? Login</a>
                         </div>
                     </div>
 

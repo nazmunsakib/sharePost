@@ -12,7 +12,7 @@
             <div class="bg-body-tertiary p-5 rounded">
                 <h3>Login!</h3>
 
-                <form action="<?php echo APPROOT; ?>/users/login" method="post">
+                <form action="<?php echo URLROOT; ?>/users/login" method="post">
                     <div class="form-group mb-2">
                         <label for="Email1">Email address <span>*</span></label>
                         <input type="email" class="form-control <?php echo (!empty($emailErr)) ? 'is-invalid' : ''; ?>" name="email" value="<?php echo $email; ?>">
@@ -30,7 +30,7 @@
                             <input type="submit" class="btn btn-success btn-block" value="Login">
                         </div>
                         <div class="col">
-                            <a href="<?php echo APPROOT; ?>/users/register" class="btn btn-light btn-block" value="Register">No Account? Register</a>
+                            <a href="<?php echo URLROOT; ?>/users/register" class="btn btn-light btn-block" value="Register">No Account? Register</a>
                         </div>
                     </div>
 
