@@ -67,20 +67,21 @@ class Users extends Controllers{
             }
         }else{
 
-            //Init data
-            $data = [
-                'name'                  => '',
-                'email'                 => '',
-                'password'              => '',
-                'confirm_password'      => '',
-                'name_err'              => '',
-                'email_err'             => '',
-                'password_err'          => '',
-                'confirm_password_err'  => ''
-            ];
 
-            //Load forntend
-            $this->view('users/register', $data);
+            //Init data
+            // $data = [
+            //     'name'                  => '',
+            //     'email'                 => '',
+            //     'password'              => '',
+            //     'confirm_password'      => '',
+            //     'name_err'              => '',
+            //     'email_err'             => '',
+            //     'password_err'          => '',
+            //     'confirm_password_err'  => ''
+            // ];
+
+            // //Load forntend
+            // $this->view('users/register', $data);
 
         }
     }
