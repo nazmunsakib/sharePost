@@ -57,6 +57,7 @@ class Users extends Controllers{
                 $data['password']   =   password_hash($data['password'], PASSWORD_DEFAULT);
 
                 if($this->userModels->register($data)){
+                    flash('register_confirmation', "Your account successfully created! Now login");
                     redirect('users/login');
                 }else{
                     die('Somthing went wrong!');
@@ -69,19 +70,19 @@ class Users extends Controllers{
 
 
             //Init data
-            // $data = [
-            //     'name'                  => '',
-            //     'email'                 => '',
-            //     'password'              => '',
-            //     'confirm_password'      => '',
-            //     'name_err'              => '',
-            //     'email_err'             => '',
-            //     'password_err'          => '',
-            //     'confirm_password_err'  => ''
-            // ];
+            $data = [
+                'name'                  => '',
+                'email'                 => '',
+                'password'              => '',
+                'confirm_password'      => '',
+                'name_err'              => '',
+                'email_err'             => '',
+                'password_err'          => '',
+                'confirm_password_err'  => ''
+            ];
 
-            // //Load forntend
-            // $this->view('users/register', $data);
+            //Load forntend
+            $this->view('users/register', $data);
 
         }
     }

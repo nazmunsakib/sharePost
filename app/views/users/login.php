@@ -10,6 +10,7 @@
     <div class="row">
         <div class="col-md-6 mx-auto">
             <div class="bg-body-tertiary p-5 rounded">
+                <?php flash('register_confirmation'); ?>
                 <h3>Login!</h3>
 
                 <form action="<?php echo URLROOT; ?>/users/login" method="post">
